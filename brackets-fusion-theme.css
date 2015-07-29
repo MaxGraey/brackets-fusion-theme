@@ -15,16 +15,21 @@
     color: #707679;
     text-align: left;
 }
-.CodeMirror-matchingbracket {
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
     color: #ef844e !important;
-    border-bottom: 1px solid #ef844e !important;
+    border-bottom: 0 solid #ef844e !important;
     background-color: transparent;
 }
 .CodeMirror-linebackground,
 .CodeMirror-activeline {
-    background-color: #6a6f74;
+    background-color: #4a4a4a;
     outline: none;
 }
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: #a0a0a0;
+}
+
 .CodeMirror-activeline .CodeMirror-linenumber {
     background-color: #60add0;
 }
@@ -66,14 +71,15 @@
     background: rgba(125, 140, 147, 0.3);
 }
 .CodeMirror-activeline .CodeMirror-gutter-elt {
-    background-color: #47494C;
-    /*background-color: #323c43;*/
-    color: white;
+    background-color: #4a4a4a;
 }
 .CodeMirror-gutter-filler,
 .CodeMirror-scrollbar-filler {
     background-color: rgba(12, 12, 12, 0.5);
     background-color: transparent;
+}
+.CodeMirror-foldgutter-open:after {
+    color: #666;
 }
 .CodeMirror-foldmarker {
     padding-right: 5px;
