@@ -23,18 +23,18 @@
 }
 .CodeMirror-linebackground,
 .CodeMirror-activeline {
-    background-color: #4a4a4a;
+    background-color: #2e2e2e;
     outline: none;
 }
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-    color: #a0a0a0;
+    color: #398ba3;
 }
 
 .CodeMirror-activeline .CodeMirror-linenumber {
     background-color: #60add0;
 }
 .cm-atom         { color: #ef844e; }
-.cm-qualifier    { color: #60add0; }
+.cm-qualifier    { color: #60b6d0; }
 .cm-keyword      { color: #99bf3f; }
 .cm-comment      { color: #7e8386; }
 .cm-string       { color: #ef844e; }
@@ -43,12 +43,12 @@
 .cm-variable-2   { color: #d0d0d0; }
 .cm-variable-3   { color: #d0d0d0; }
 .cm-tag          { color: #99bf3f; }
-.cm-attribute    { color: #83bfd1; }
+.cm-attribute    { color: #60b6d0; }
 .cm-property     { color: #d0d0d0; }
 .cm-number       { color: #ef844e; }
 .cm-operator     { color: #ef844e; }
 .cm-def          { color: #becba0; }
-.cm-meta         { color: #60add0; }
+.cm-meta         { color: #60b6d0; }
 .cm-builtin      { color: #d0d0d0; }
 .cm-invalidchar,
 .cm-error {
@@ -61,7 +61,7 @@
     text-decoration: underline;
 }
 .quick-view-highlight {
-    background: rgba(103, 140, 177, 0.4);
+    background: rgba(0,0,0,0.25);
 }
 .cm-matchhighlight:not(.CodeMirror-selectedtext) {
 /*    background-color: #616161;*/
@@ -71,7 +71,7 @@
     background: rgba(125, 140, 147, 0.3);
 }
 .CodeMirror-activeline .CodeMirror-gutter-elt {
-    background-color: #4a4a4a;
+    background-color: #2e2e2e;
 }
 .CodeMirror-gutter-filler,
 .CodeMirror-scrollbar-filler {
@@ -95,7 +95,7 @@
 .CodeMirror-selectedtext,
 .CodeMirror-selected,
 .CodeMirror-focused .CodeMirror-selected {
-    background-color: #484e50;
+    background-color: #2e2e2e;
 }
 .CodeMirror-cursors {
     z-index: 5 !important;
@@ -126,7 +126,7 @@
 .inline-text-editor,
 .inline-widget .CodeMirror-scroll .CodeMirror-linenumbers,
 .inline-text-editor .CodeMirror-gutter-elt {
-    background-color: #1b1b1b !important;
+    background-color: #2e2e2e !important;
 }
 .inline-text-editor .CodeMirror-linebackground, 
 .inline-text-editor .CodeMirror-activeline,
