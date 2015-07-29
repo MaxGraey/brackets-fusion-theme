@@ -1,0 +1,172 @@
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+    color: #cccccc;
+    background-color: #3D3F41;
+}
+.CodeMirror-lines pre {
+    z-index: 3;
+}
+.CodeMirror-gutters {
+    background-color: transparent;
+    border-right: 1px solid #464646;
+}
+.CodeMirror-linenumber {
+    background-color: transparent;
+    color: #707679;
+    text-align: left;
+}
+.CodeMirror-matchingbracket {
+    color: #ef844e !important;
+    border-bottom: 1px solid #ef844e !important;
+    background-color: transparent;
+}
+.CodeMirror-linebackground,
+.CodeMirror-activeline {
+    background-color: #6a6f74;
+    outline: none;
+}
+.CodeMirror-activeline .CodeMirror-linenumber {
+    background-color: #60add0;
+}
+.cm-atom         { color: #ef844e; }
+.cm-qualifier    { color: #60add0; }
+.cm-keyword      { color: #99bf3f; }
+.cm-comment      { color: #7e8386; }
+.cm-string       { color: #ef844e; }
+.cm-string-2     { color: #ef844e; }
+.cm-variable     { color: #d0d0d0; }
+.cm-variable-2   { color: #d0d0d0; }
+.cm-variable-3   { color: #d0d0d0; }
+.cm-tag          { color: #99bf3f; }
+.cm-attribute    { color: #83bfd1; }
+.cm-property     { color: #d0d0d0; }
+.cm-number       { color: #ef844e; }
+.cm-operator     { color: #becba0; }
+.cm-def          { color: #becba0; }
+.cm-meta         { color: #60add0; }
+.cm-builtin      { color: #d0d0d0; }
+.cm-invalidchar,
+.cm-error {
+    outline: 1px solid #e66351;
+    background: #c14a3a;
+    color: #ddd;
+}
+.cm-link {
+    color: #4994eb;
+    text-decoration: underline;
+}
+.quick-view-highlight {
+    background: rgba(103, 140, 177, 0.4);
+}
+.cm-matchhighlight:not(.CodeMirror-selectedtext) {
+/*    background-color: #616161;*/
+    color: #ffffff;
+}
+.CodeMirror-matchingtag {
+    background: rgba(125, 140, 147, 0.3);
+}
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: #47494C;
+    /*background-color: #323c43;*/
+    color: white;
+}
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background-color: rgba(12, 12, 12, 0.5);
+    background-color: transparent;
+}
+.CodeMirror-foldmarker {
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: transparent;
+    border: none;
+    margin-right: 3px;
+    margin-left: 3px;
+    border-radius: 3px;
+    color: #d9d9d9;
+    cursor: pointer;
+}
+.CodeMirror-selectedtext,
+.CodeMirror-selected,
+.CodeMirror-focused .CodeMirror-selected {
+    background-color: #484e50;
+}
+.CodeMirror-cursors {
+    z-index: 5 !important;
+}
+.CodeMirror-cursors .CodeMirror-cursor {
+    border-left: 1px solid #ffffff !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    background-color: rgba(38, 43, 44, 0.8) !important;
+    height: 10px;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.5) inset !important;
+    border-radius: 0px;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.4) inset !important;
+}
+::-webkit-scrollbar-thumb:active {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.2) inset !important;
+}
+
+/* Inline editor */
+.inline-text-editor,
+.inline-widget .CodeMirror-scroll .CodeMirror-linenumbers,
+.inline-text-editor .CodeMirror-gutter-elt {
+    background-color: #1b1b1b !important;
+}
+.inline-text-editor .CodeMirror-linebackground, 
+.inline-text-editor .CodeMirror-activeline,
+.inline-text-editor .CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: #2c2c2c !important;
+}
+
+/* Support for jeffbooher's Bookmarks */
+.bookmark .CodeMirror-gutter-elt {
+    background-color: #678CB1;
+}
+
+.bookmark .CodeMirror-linenumber {
+    /*background-image: url('./bookmark.svg');*/
+    background-size: 16px;
+    background-repeat: no-repeat;
+    color: white !important;
+}
+
+.active-pane .bookmark .CodeMirror-gutter-elt {
+    background-color: #678CB1;
+}
+
+.active-pane .bookmark.live-preview-sync-error .CodeMirror-linenumber {
+    background-color: #678CB1 !important;
+}
+
+.bookmark-notify {
+    background-color: #678CB1;
+}
+
+.bookmark-notify .CodeMirror-activeline-background {
+    background-color: #678CB1 !important;
+}
+
+.bookmark.CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: #678CB1 !important;
+}
+
+.active-pane .bookmark.CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: #678CB1 !important;
+}
+
+.bookmark.CodeMirror-activeline .CodeMirror-linenumber {
+/*    background-image: url('bookmark.svg') !important;*/
+    background-size: 16px !important;
+    background-repeat: no-repeat !important;
+    color: white !important;
+}

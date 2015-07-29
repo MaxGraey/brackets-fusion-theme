@@ -1,0 +1,27 @@
+{
+    "title": "Brackets Fusion",
+    "name": "brackets-fusion-theme",
+    "description": "Modified Smooth Neutrals Theme. Support for wangling in the colors of Jeff Booher's Bookmarks Extension.",
+    "version": "0.0.1",
+    "author": "Max Graey",
+    "license": "MIT",
+    "homepage": "https://github.com/maxgraey/brackets-fusion-theme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/maxgraey/brackets-fusion-theme"
+    },
+	"keywords": [
+        "themes",
+        "fusion",
+        "neutral",
+        "gray",
+        "grey"
+    ],
+    "engines": {
+        "brackets": ">=0.42.0"
+    },
+    "theme": {
+        "file": "brackets-fusion-theme.css",
+        "dark": true
+    }
+}
