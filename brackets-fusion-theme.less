@@ -1,3 +1,12 @@
+@light   : #d1d0c5;
+@gray    : #7e8386;
+@orange  : #ef8066;
+@blue    : #5ab9d1;
+@green   : #99bf3f;
+@lgreen  : @light;
+@bookmark: #678CB1;
+@darker  : rgba(12,12,12,0.35);
+
 .CodeMirror,
 .CodeMirror .CodeMirror-scroll {
     color: #cccccc;
@@ -8,19 +17,19 @@
 }
 .CodeMirror-gutters {
     background-color: transparent;
-    border-right: 1px solid #464646;
+    border-right: 1px solid #383838;
 }
 .CodeMirror-linenumber {
     background-color: transparent;
-    color: #707679;
+    color: @gray;
     text-align: left;
 }
 .CodeMirror-matchingbracket {
-    color: #ef844e !important;
+    color: @orange !important;
     background-color: transparent;
 }
 .CodeMirror-matchingtag {
-    background: rgba(0, 0, 0, 0.35);
+    background: @darker;
 }
 .CodeMirror-linebackground,
 .CodeMirror-activeline {
@@ -28,29 +37,29 @@
     outline: none;
 }
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-    color: #398ba3;
+    color: @blue;
 }
 
 .CodeMirror-activeline .CodeMirror-linenumber {
-    background-color: #60add0;
+    background-color: @blue;
 }
-.cm-atom         { color: #ef844e; }
-.cm-qualifier    { color: #60b6d0; }
-.cm-keyword      { color: #99bf3f; }
-.cm-comment      { color: #7e8386; }
-.cm-string       { color: #ef844e; }
-.cm-string-2     { color: #ef844e; }
-.cm-variable     { color: #d0d0d0; }
-.cm-variable-2   { color: #d0d0d0; }
-.cm-variable-3   { color: #d0d0d0; }
-.cm-tag          { color: #99bf3f; }
-.cm-attribute    { color: #60b6d0; }
-.cm-property     { color: #d0d0d0; }
-.cm-number       { color: #ef844e; }
-.cm-operator     { color: #ef844e; }
-.cm-def          { color: #becba0; }
-.cm-meta         { color: #60b6d0; }
-.cm-builtin      { color: #d0d0d0; }
+.cm-atom         { color: @orange; }
+.cm-qualifier    { color: @blue; }
+.cm-keyword      { color: @green; }
+.cm-comment      { color: @gray; }
+.cm-string       { color: @orange; }
+.cm-string-2     { color: @orange; }
+.cm-variable     { color: @light; }
+.cm-variable-2   { color: @light; }
+.cm-variable-3   { color: @light; }
+.cm-tag          { color: @green; }
+.cm-attribute    { color: @blue; }
+.cm-property     { color: @light; }
+.cm-number       { color: @orange; }
+.cm-operator     { color: @orange; }
+.cm-def          { color: @lgreen; }
+.cm-meta         { color: @blue; }
+.cm-builtin      { color: @light; }
 .cm-invalidchar,
 .cm-error {
     outline: 1px solid #e66351;
@@ -62,7 +71,7 @@
     text-decoration: underline;
 }
 .quick-view-highlight {
-    background: rgba(12,12,12,0.35);
+    background: @darker;
 }
 .cm-matchhighlight:not(.CodeMirror-selectedtext) {
 /*    background-color: #616161;*/
@@ -73,11 +82,17 @@
 }
 .CodeMirror-gutter-filler,
 .CodeMirror-scrollbar-filler {
-    background-color: rgba(12, 12, 12, 0.5);
-    background-color: transparent;
+    background-color: @darker;
 }
 .CodeMirror-foldgutter-open:after {
+    font-size: 10pt;
     color: #666;
+    content: "\25BE";
+}
+.CodeMirror-foldgutter-folded:after {
+    font-size: 10pt;
+    color: #888;
+    content: "\25B8";
 }
 .CodeMirror-foldmarker {
     padding-right: 5px;
@@ -94,7 +109,8 @@
 .CodeMirror-selected,
 .CodeMirror-focused .CodeMirror-selected,
 .CodeMirror-focused .CodeMirror-selectedtext {
-    background-color: #505050;
+    /*background-color: #505050;*/
+    background-color: #2b5865;
 }
 .CodeMirror-cursors {
     z-index: 5 !important;
@@ -107,7 +123,7 @@
 ::-webkit-scrollbar {
     background-color: rgba(38, 43, 44, 0.8) !important;
     height: 10px;
-    width: 10px;
+    width:  10px;
 }
 ::-webkit-scrollbar-thumb {
     box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.5) inset !important;
@@ -135,7 +151,7 @@
 
 /* Support for jeffbooher's Bookmarks */
 .bookmark .CodeMirror-gutter-elt {
-    background-color: #678CB1;
+    background-color: @bookmark;
 }
 
 .bookmark .CodeMirror-linenumber {
@@ -146,27 +162,27 @@
 }
 
 .active-pane .bookmark .CodeMirror-gutter-elt {
-    background-color: #678CB1;
+    background-color: @bookmark;
 }
 
 .active-pane .bookmark.live-preview-sync-error .CodeMirror-linenumber {
-    background-color: #678CB1 !important;
+    background-color: @bookmark !important;
 }
 
 .bookmark-notify {
-    background-color: #678CB1;
+    background-color: @bookmark;
 }
 
 .bookmark-notify .CodeMirror-activeline-background {
-    background-color: #678CB1 !important;
+    background-color: @bookmark !important;
 }
 
 .bookmark.CodeMirror-activeline .CodeMirror-gutter-elt {
-    background-color: #678CB1 !important;
+    background-color: @bookmark !important;
 }
 
 .active-pane .bookmark.CodeMirror-activeline .CodeMirror-gutter-elt {
-    background-color: #678CB1 !important;
+    background-color: @bookmark !important;
 }
 
 .bookmark.CodeMirror-activeline .CodeMirror-linenumber {
