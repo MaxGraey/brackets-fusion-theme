@@ -1,4 +1,5 @@
-@light   : #d1d0c5;
+@backgrnd: #3D3F41;
+@light   : #dddbc9;
 @gray    : #7e8386;
 @orange  : #ef8066;
 @blue    : #5ab9d1;
@@ -9,8 +10,8 @@
 
 .CodeMirror,
 .CodeMirror .CodeMirror-scroll {
-    color: #cccccc;
-    background-color: #3D3F41;
+    color: @light;
+    background-color: @backgrnd;
 }
 .CodeMirror-lines pre {
     z-index: 3;
@@ -33,7 +34,7 @@
 }
 .CodeMirror-linebackground,
 .CodeMirror-activeline {
-    background-color: #333638;
+    background-color: rgba(0,7,26,0.05);
     outline: none;
 }
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
@@ -44,22 +45,22 @@
     background-color: @blue;
 }
 .cm-atom         { color: @orange; }
-.cm-qualifier    { color: @blue; }
-.cm-keyword      { color: @green; }
-.cm-comment      { color: @gray; }
+.cm-qualifier    { color: @blue;   }
+.cm-keyword      { color: @green;  }
+.cm-comment      { color: @gray;   }
 .cm-string       { color: @orange; }
 .cm-string-2     { color: @orange; }
-.cm-variable     { color: @light; }
-.cm-variable-2   { color: @light; }
-.cm-variable-3   { color: @light; }
-.cm-tag          { color: @green; }
-.cm-attribute    { color: @blue; }
-.cm-property     { color: @light; }
+.cm-variable     { color: @light;  }
+.cm-variable-2   { color: @light;  }
+.cm-variable-3   { color: @light;  }
+.cm-tag          { color: @green;  }
+.cm-attribute    { color: @blue;   }
+.cm-property     { color: @light;  }
 .cm-number       { color: @orange; }
 .cm-operator     { color: @orange; }
 .cm-def          { color: @lgreen; }
-.cm-meta         { color: @blue; }
-.cm-builtin      { color: @light; }
+.cm-meta         { color: @blue;   }
+.cm-builtin      { color: @light;  }
 .cm-invalidchar,
 .cm-error {
     outline: 1px solid #e66351;
