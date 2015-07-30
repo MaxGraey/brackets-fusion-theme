@@ -1,11 +1,9 @@
 @backgrnd: #3D3F41;
 @light:    hsl(60, 9%, 77%);
 @gray:     #7e8386;
-/*@orange:   #ef8066;*/
-@orange:   hsl(16, 64%, 60%);
-/*@blue:     #5ab9d1;*/
+@orange:   hsl(17, 66%, 65%);
 @blue:     hsl(183, 36%, 56%);
-@green:    #99bf3f;
+@green:    hsl(78, 48%, 53%);
 @lgreen:   @light;
 @bookmark: #678CB1;
 @select:   #545659;
@@ -51,25 +49,22 @@
     background-color: @blue;
 }
 .cm-atom         { color: @orange; }
-.cm-qualifier    { color: @blue;   }
-.cm-keyword      { color: @green;  }
-.cm-comment  { 
-    color: @gray;
-    text-shadow: none;
-}
+.cm-qualifier    { color: @blue; }
+.cm-keyword      { color: @green; }
+.cm-comment      { color: @gray; text-shadow: none; }
 .cm-string       { color: @orange; }
 .cm-string-2     { color: @orange; }
-.cm-variable     { color: @light;  }
-.cm-variable-2   { color: @light;  }
-.cm-variable-3   { color: @light;  }
-.cm-tag          { color: @green;  }
-.cm-attribute    { color: @blue;   }
-.cm-property     { color: @light;  }
+.cm-variable     { color: @light; text-shadow: none; }
+.cm-variable-2   { color: @light; text-shadow: none; }
+.cm-variable-3   { color: @light; text-shadow: none; }
+.cm-tag          { color: @green; }
+.cm-attribute    { color: @blue; }
+.cm-property     { color: @green; }
 .cm-number       { color: @orange; }
 .cm-operator     { color: @orange; }
 .cm-def          { color: @lgreen; }
-.cm-meta         { color: @blue;   }
-.cm-builtin      { color: @light;  }
+.cm-meta         { color: @blue; }
+.cm-builtin      { color: @light; text-shadow: none; }
 .cm-invalidchar,
 .cm-error {
     outline: 1px solid #e66351;
