@@ -6,6 +6,8 @@
 @green:    #99bf3f;
 @lgreen:   @light;
 @bookmark: #678CB1;
+@select:   #545659;
+
 @darker:   rgba(10,10,10,0.35);
 
 .CodeMirror,
@@ -115,8 +117,7 @@
 .CodeMirror-selected,
 .CodeMirror-focused .CodeMirror-selected,
 .CodeMirror-focused .CodeMirror-selectedtext {
-    /*background-color: #505050;*/
-    background-color: #2b5865;
+    background-color: @select;
 }
 
 .CodeMirror-cursors {
