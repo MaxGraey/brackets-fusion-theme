@@ -102,6 +102,11 @@
     content: "\25B8";
     text-shadow: 0 2px 1px rgba(0,0,0,0.25);
 }
+.CodeMirror.over-gutter, .CodeMirror-activeline {
+    .CodeMirror-foldgutter-open:after {
+        color: @blue;
+    }
+}
 .CodeMirror-foldmarker {
     padding-right: 5px;
     padding-left: 5px;
